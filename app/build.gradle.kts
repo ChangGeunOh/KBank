@@ -1,6 +1,9 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("dagger.hilt.android.plugin")
+    id("kotlinx-serialization")
+    id("com.google.devtools.ksp")
 }
 
 android {
@@ -66,6 +69,39 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+    // Optional - Integration with ViewModels
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
+
+    // Coil
+    implementation("io.coil-kt:coil-compose:2.4.0")
+
+    // Hilt
+    implementation("com.google.dagger:hilt-android:2.43.2")
+    ksp("com.google.dagger:hilt-android-compiler:2.43.2")
+
+    // navigation
+    implementation("androidx.navigation:navigation-compose:2.7.4")
+
+    // Room
+    implementation("androidx.room:room-runtime:2.6.0")
+    implementation("androidx.room:room-ktx:2.6.0")
+    implementation("androidx.room:room-paging:2.6.0")
+    ksp("androidx.room:room-compiler:2.6.0")
+
+
+    // Preferences
+    implementation("androidx.preference:preference-ktx:1.2.1")
+
+    // Ktor Client
+    implementation("io.ktor:ktor-client-core:1.6.4")
+    implementation("io.ktor:ktor-client-android:1.6.4")
+    implementation("io.ktor:ktor-client-content-negotiation:2.0.0")
+    implementation("io.ktor:ktor-client-auth:1.6.4")
+    implementation("io.ktor:ktor-client-logging:1.6.4")
+
+    implementation("io.ktor:ktor-serialization-kotlinx-json-jvm:2.2.2")
+
 
 
 }
