@@ -2,7 +2,9 @@ package kr.pe.paran.kbank
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
+import androidx.activity.SystemBarStyle
 import androidx.activity.compose.setContent
+import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -20,9 +22,9 @@ class MainActivity : ComponentActivity() {
             KBankTheme {
                 // A surface container using the 'background' color from the theme
                 val navHostController = rememberNavController()
+//                enableEdgeToEdge(statusBarStyle = SystemBarStyle.light(scrim = 10, darkScrim = 20))
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
                 ) {
                     NavGraph(navHostController = navHostController)
                 }

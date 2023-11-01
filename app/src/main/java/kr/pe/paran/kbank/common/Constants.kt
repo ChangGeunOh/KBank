@@ -4,7 +4,7 @@ import io.ktor.http.*
 
 object Constants {
 
-    const val DATABASE_VERSION = 1
+    const val DATABASE_VERSION = 2
     const val DATABASE_NAME = "kbank.db"
     const val DATASTORE_NAME = "kbank.store"
 

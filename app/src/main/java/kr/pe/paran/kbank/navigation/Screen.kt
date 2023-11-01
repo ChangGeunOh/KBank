@@ -1,6 +1,7 @@
 package kr.pe.paran.kbank.navigation
 
 sealed class Screen(val route: String) {
-    object Splash: Screen("splash_screen")
-    object Main: Screen("main_screen")
+    data object Test: Screen("test_screen")
+    data object Splash: Screen("splash_screen")
+    data object Main: Screen("main_screen")
 }
