@@ -90,14 +90,14 @@ dependencies {
     ksp("androidx.room:room-compiler:2.6.0")
 
     // Preferences
-    implementation("androidx.preference:preference-ktx:1.2.1")
+    implementation("androidx.datastore:datastore-preferences:1.0.0")
 
     // Ktor Client
-    implementation("io.ktor:ktor-client-core:2.0.0")
-    implementation("io.ktor:ktor-client-android:1.6.4")
-    implementation("io.ktor:ktor-client-content-negotiation:2.0.0")
-    implementation("io.ktor:ktor-client-auth:1.6.4")
-    implementation("io.ktor:ktor-client-logging:1.6.4")
+    implementation("io.ktor:ktor-client-core:2.3.5")
+    implementation("io.ktor:ktor-client-android:2.3.5")
+    implementation("io.ktor:ktor-client-content-negotiation:2.3.5")
+    implementation("io.ktor:ktor-client-auth:2.3.5")
+    implementation("io.ktor:ktor-client-logging:2.3.5")
 
     implementation("io.ktor:ktor-serialization-kotlinx-json-jvm:2.2.2")
 
