@@ -20,4 +20,6 @@ object Constants {
     const val JOB_ID_LAZY_LOADING = 0xfedcba
     const val JOB_ID_APP_UPDATE = 0xfedcbb
 
+    const val PASSWORD_NUMBER = "123456"
+
 }

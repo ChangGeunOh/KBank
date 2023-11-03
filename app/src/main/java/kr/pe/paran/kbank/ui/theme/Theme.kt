@@ -24,29 +24,37 @@ private val darkColorScheme = darkColorScheme(
 )
 
 private val lightColorScheme = lightColorScheme(
-    primary = Color.White,
+    primary = Color.White,                  // Status bar Background color
+    onPrimary = Color.Red,                  // Text color
     secondary = PurpleGrey40,
     tertiary = Pink40,
-    background = Color(0xFF00F8F8),
-    scrim = Color.Red,
-    onPrimary = Color.Red,
-    primaryContainer = Color.Red,
-    onPrimaryContainer = Color.Red,
+    background = Color.White,
+    onBackground = Color(0xFF141414),
+
+    scrim = Color.Black,                    // Modal Background color
+    surfaceTint = Color.White,          // Modal Container Background color
+
+    primaryContainer = Color(0xFFF1F6FB),
+
+    onPrimaryContainer = Color(0xFFF1F6FB),
     inversePrimary = Color.Red,
-    onSecondary = Color.Red,
-    secondaryContainer = Color.Red,
-    onSecondaryContainer = Color.Red,
-    onTertiary = Color.Red,
-    tertiaryContainer = Color.Red,
-    onTertiaryContainer = Color.Red,
-    onBackground = Color.Red,
-    surface = Color.Red,
+    onSecondary = Color(0xFFF1F6FB),
+
+    secondaryContainer = Color(0xFFF1F6FB),
+    onSecondaryContainer = Color(0xff17008C),
+
+    onTertiary = Color(0xFFF1F6FB),
+    tertiaryContainer = Color(0xFFF1F6FB),
+    onTertiaryContainer = Color(0xFFF1F6FB),
+    surface = Color.White,
+
     onSurface = Color.Red,
     surfaceVariant = Color.Red,
     onSurfaceVariant = Color.Red,
-    surfaceTint = Color.Red,
+
     inverseSurface = Color.Red,
     inverseOnSurface = Color.Red,
+
     error = Color.Red,
     onError = Color.Red,
     errorContainer = Color.Red,
