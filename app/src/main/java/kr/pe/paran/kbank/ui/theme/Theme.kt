@@ -24,15 +24,15 @@ private val darkColorScheme = darkColorScheme(
 )
 
 private val lightColorScheme = lightColorScheme(
-    primary = Color.White,                  // Status bar Background color
+    primary = MainBackgroundColor,                  // Status bar Background color
     onPrimary = Color.Red,                  // Text color
     secondary = PurpleGrey40,
     tertiary = Pink40,
     background = Color.White,
     onBackground = Color(0xFF141414),
 
-    scrim = Color.Black,                    // Modal Background color
-    surfaceTint = Color.White,          // Modal Container Background color
+    scrim = Color.Black,                                // Modal Background color
+    surfaceTint = Color.White,                          // Modal Container Background color
 
     primaryContainer = Color(0xFFF1F6FB),
 
@@ -46,7 +46,7 @@ private val lightColorScheme = lightColorScheme(
     onTertiary = Color(0xFFF1F6FB),
     tertiaryContainer = Color(0xFFF1F6FB),
     onTertiaryContainer = Color(0xFFF1F6FB),
-    surface = Color.White,
+    surface = Color(0xFFF8F8F8),                    // Scaffold Background color
 
     onSurface = Color.Red,
     surfaceVariant = Color.Red,

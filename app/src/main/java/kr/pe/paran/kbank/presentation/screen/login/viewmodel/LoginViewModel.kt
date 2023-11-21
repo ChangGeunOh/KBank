@@ -1,6 +1,5 @@
 package kr.pe.paran.kbank.presentation.screen.login.viewmodel
 
-import androidx.compose.ui.unit.Constraints
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.delay
@@ -44,7 +43,7 @@ class LoginViewModel @Inject constructor(
             }
 
             LoginEvent.OnNext -> {
-                return oldState.copy(nextScreen = Screen.Main)
+                return oldState.copy(nextScreen = Screen.Home)
             }
 
             LoginEvent.OnClickOther -> {

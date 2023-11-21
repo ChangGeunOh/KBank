@@ -24,7 +24,7 @@ fun SplashScreen(
     val state by viewModel.state.collectAsState()
     LaunchedEffect(key1 = state, block = {
         if (state.isNext) {
-            navController.navigate(Screen.Main.route)
+            navController.navigate(Screen.Home.route)
         }
     })
 
